@@ -1,13 +1,14 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
-import TranslateIcon from '@mui/icons-material/Translate'
+import { GlobeIcon } from '@radix-ui/react-icons'
+import { LanguagesIcon } from 'lucide-react'
 import { FC } from 'react'
 
 export const DropdownLanguage: FC = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <span className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm' title='Languages'>
-          <TranslateIcon fontSize='small' />
+        <span className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1.5 rounded-sm' title='Languages'>
+          <GlobeIcon height={16} width={16} />
         </span>
       </DropdownMenuTrigger>
 

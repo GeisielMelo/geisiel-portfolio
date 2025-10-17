@@ -20,23 +20,10 @@ export const CustomLink: FC<{ repository: Repository }> = ({ repository }) => {
 
   if (!href) return null
 
+  const event = { event: 'archive_click', action: 'click', type: 'link', title: repository.name, category: 'archive', href }
+
   return (
-    <a
-      href={href}
-      target='_blank'
-      rel='noopener noreferrer'
-      title={title}
-      onClick={() =>
-        sendGTMEvent({
-          event: 'archive_click',
-          action: 'click',
-          type: 'link',
-          title: repository.name,
-          category: 'archive',
-          href,
-        })
-      }
-    >
+    <a href={href} target='_blank' rel='noopener noreferrer' title={title} onClick={() => sendGTMEvent(event)}>
       {title === 'Live' ? <ExternalLinkIcon height={16} width={16} /> : <GitHubLogoIcon height={16} width={16} />}
     </a>
   )
