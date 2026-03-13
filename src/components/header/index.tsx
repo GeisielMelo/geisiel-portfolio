@@ -1,14 +1,10 @@
 'use client'
 
+import { GitHubLogoIcon, LinkedInLogoIcon, ArchiveIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons'
 import { DropdownLanguage } from '@/components/ui/dropdown-languages'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { FC } from 'react'
-
-import FolderZipIcon from '@mui/icons-material/FolderZip'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import EmailIcon from '@mui/icons-material/Email'
 
 export const Header: FC<{ locale: string }> = ({ locale }) => {
   const t = useTranslations('Header')
@@ -24,10 +20,7 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
         <nav className='nav hidden lg:block'>
           <ul className='flex flex-col gap-1 mt-16 w-max'>
             {keys.map((key, index) => (
-              <li
-                key={index}
-                className='flex text-sm font-bold uppercase tracking-widest hover:pl-4 hover:text-white transition-all cursor-pointer'
-              >
+              <li key={index} className='flex text-sm font-bold uppercase tracking-widest hover:pl-4 hover:text-white transition-all cursor-pointer'>
                 <Link href={locale + '/' + t(`options.${key}.href`)}>{t(`options.${key}.title`)}</Link>
               </li>
             ))}
@@ -36,39 +29,20 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
       </div>
 
       <div className='mt-8 flex items-center gap-2'>
-        <a
-          href='https://github.com/GeisielMelo'
-          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
-          target='_blank'
-          title='GitHub'
-        >
-          <GitHubIcon fontSize='small' />
+        <a href='https://github.com/GeisielMelo' className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1.5 rounded' target='_blank' title='GitHub'>
+          <GitHubLogoIcon height={16} width={16} />
         </a>
 
-        <a
-          href='https://www.linkedin.com/in/geisiel'
-          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
-          target='_blank'
-          title='LinkedIn'
-        >
-          <LinkedInIcon fontSize='small' />
+        <a href='https://www.linkedin.com/in/geisiel' className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1.5 rounded-sm' target='_blank' title='LinkedIn'>
+          <LinkedInLogoIcon height={16} width={16} />
         </a>
 
-        <a
-          href='mailto:geisiel.nascimento@gmail.com'
-          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
-          target='_blank'
-          title='Email'
-        >
-          <EmailIcon fontSize='small' />
+        <a href='mailto:geisiel.nascimento@gmail.com' className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1.5 rounded-sm' target='_blank' title='Email'>
+          <EnvelopeClosedIcon height={16} width={16} />
         </a>
 
-        <Link
-          href={locale + '/archive'}
-          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
-          title='Archive'
-        >
-          <FolderZipIcon fontSize='small' />
+        <Link href={locale + '/archive'} className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1.5 rounded-sm' title='Archive'>
+          <ArchiveIcon height={16} width={16} />
         </Link>
 
         <DropdownLanguage />

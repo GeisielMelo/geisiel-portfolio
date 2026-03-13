@@ -10,15 +10,7 @@ export const Experience: FC = () => {
     <section id='experience' className='section'>
       <h2 className='text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only my-6'>{t('title')}</h2>
       {keys.map((key, index) => (
-        <ExperienceCard
-          key={index}
-          start={t(`cards.${key}.start`)}
-          end={t(`cards.${key}.end`)}
-          description={t(`cards.${key}.description`)}
-          tags={t(`cards.${key}.tags`)}
-          title={t(`cards.${key}.title`)}
-          href={t(`cards.${key}.href`)}
-        />
+        <ExperienceCard key={index} start={t(`cards.${key}.start`)} end={t(`cards.${key}.end`)} description={t(`cards.${key}.description`)} tags={t(`cards.${key}.tags`)} title={t(`cards.${key}.title`)} href={t(`cards.${key}.href`)} />
       ))}
     </section>
   )

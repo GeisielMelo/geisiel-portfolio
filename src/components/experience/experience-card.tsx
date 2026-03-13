@@ -35,9 +35,7 @@ export const ExperienceCard: FC<Card> = ({ start, end, title, description, tags,
         <ul className='mt-2 flex flex-wrap'>
           {tagsArray.map((tag, key) => (
             <li key={key} className='mr-1.5 mt-2'>
-              <div className='flex items-center rounded-full bg-slate-900/95 px-3 py-1 text-xs font-medium leading-5 text-white/95'>
-                {tag}
-              </div>
+              <div className='flex items-center rounded-full bg-slate-900/95 px-3 py-1 text-xs font-medium leading-5 text-white/95'>{tag}</div>
             </li>
           ))}
         </ul>

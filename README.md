@@ -8,7 +8,6 @@
   The third veresion of <a href="https://geisiel.com" target="_blank">geisiel.com</a> built with <a href="https://nextjs.org" target="_blank">Next</a>.
 </p>
 
-
 ## 🚨 Forking this repo
 
 Some people have come and asked me if they can use this portfolio and the answer is, YES!

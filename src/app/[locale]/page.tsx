@@ -1,8 +1,8 @@
+import { Experience } from '@/components/experience'
+import { Projects } from '@/components/projects'
 import { getLocale } from 'next-intl/server'
 import { Header } from '@/components/header'
 import { About } from '@/components/about'
-import { Experience } from '@/components/experience'
-import { Projects } from '@/components/projects'
 
 export default async function Page() {
   const locale = await getLocale()

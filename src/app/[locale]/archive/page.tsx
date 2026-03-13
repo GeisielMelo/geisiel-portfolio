@@ -36,9 +36,7 @@ export default async function Page() {
                   <ul>
                     {repository.tags.map((topic, index) => (
                       <li className='mb-3 mr-1 inline-block' key={index} title={topic}>
-                        <div className='flex items-center rounded-full bg-slate-900/95 px-3 py-1 text-xs font-medium leading-5 text-white/75'>
-                          {topic}
-                        </div>
+                        <div className='flex items-center rounded-full bg-slate-900/95 px-3 py-1 text-xs font-medium leading-5 text-white/75'>{topic}</div>
                       </li>
                     ))}
                   </ul>

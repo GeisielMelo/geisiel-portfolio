@@ -3,6 +3,9 @@ import '@/styles/global.css'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { getLocale, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export async function generateMetadata() {
   const locale = await getLocale()
@@ -16,20 +19,13 @@ export async function generateMetadata() {
       name: 'Geisiel',
       url: 'https://www.linkedin.com/in/geisiel',
     },
-    description:
-      'Web developer with years of experience specializing in creating optimized, responsive sites for exceptional user experiences.',
+    description: 'Web developer with years of experience specializing in creating optimized, responsive sites for exceptional user experiences.',
     applicationName: 'GeisielMelo',
     publisher: 'Geisiel',
     archives: '/static/resume.pdf',
     creator: 'Geisiel Nascimento',
     icons: { icon: '/favicon.ico' },
-    keywords: [
-      'web developer',
-      'web developer geisiel',
-      'web developer geisiel melo',
-      'web developer geisiel nascimento',
-      'geisiel open to work, open to work, geisiel melo',
-    ],
+    keywords: ['web developer', 'web developer geisiel', 'web developer geisiel melo', 'web developer geisiel nascimento', 'geisiel open to work, open to work, geisiel melo'],
     classification: 'Portfolio - GeisielMelo',
     alternates: { canonical: `/${locale}` },
     openGraph: {
@@ -61,7 +57,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale}>
-      <body className='bg-custom-one text-slate-400'>
+      <body className={`${inter.className} bg-custom-one text-slate-400`}>
         <GoogleTagManager gtmId='GTM-5W62N986' />
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
