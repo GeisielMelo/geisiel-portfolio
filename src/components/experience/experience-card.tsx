@@ -9,9 +9,33 @@ interface Card {
   href?: string
 }
 
+interface TagGroup {
+  label: string
+  tags: string[]
+}
+
+function parseTagGroups(tags: string): TagGroup[] | null {
+  if (!tags.includes(';')) return null
+  return tags.split(';').map((group) => {
+    const colonIndex = group.indexOf(':')
+    if (colonIndex === -1) {
+      return { label: '', tags: group.split(',').map((t) => t.trim()).filter(Boolean) }
+    }
+    return {
+      label: group.slice(0, colonIndex).trim(),
+      tags: group
+        .slice(colonIndex + 1)
+        .split(',')
+        .map((t) => t.trim())
+        .filter(Boolean),
+    }
+  })
+}
+
 export const ExperienceCard: FC<Card> = ({ start, end, title, description, tags, href }) => {
   const tagsArray = tags.split(', ')
   const descriptionArray = description.split('|')
+  const tagGroups = parseTagGroups(tags)
 
   return (
     <div className='group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 mb-12'>
@@ -32,13 +56,32 @@ export const ExperienceCard: FC<Card> = ({ start, end, title, description, tags,
           ))}
         </ul>
 
-        <ul className='mt-2 flex flex-wrap'>
-          {tagsArray.map((tag, key) => (
-            <li key={key} className='mr-1.5 mt-2'>
-              <div className='flex items-center rounded-full bg-slate-900/95 px-3 py-1 text-xs font-medium leading-5 text-white/95'>{tag}</div>
-            </li>
-          ))}
-        </ul>
+        {tagGroups ? (
+          <div className='mt-4 flex flex-col gap-y-2'>
+            {tagGroups.map((group, i) => (
+              <div key={i} className='grid grid-cols-[6rem_1fr] items-start gap-x-3'>
+                {group.label && (
+                  <span className='pt-0.5 text-[10px] font-semibold uppercase leading-5 tracking-widest text-slate-500'>{group.label}</span>
+                )}
+                <div className={`flex flex-wrap gap-1.5${!group.label ? ' col-span-2' : ''}`}>
+                  {group.tags.map((tag, j) => (
+                    <span key={j} className='rounded-full bg-teal-400/10 px-2.5 py-0.5 text-xs font-medium leading-5 text-teal-300'>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <ul className='mt-2 flex flex-wrap gap-1.5'>
+            {tagsArray.map((tag, key) => (
+              <li key={key}>
+                <span className='rounded-full bg-teal-400/10 px-2.5 py-0.5 text-xs font-medium leading-5 text-teal-300'>{tag}</span>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   )

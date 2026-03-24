@@ -37,7 +37,7 @@
         "end": "Hoje",
         "title": "Full Stack Developer · UniFTC",
         "description": "Desenvolvimento de websites com foco em acessibilidade e performance. | Criação de APIs robustas e funcionais. | Integração de sistemas para garantir comunicação eficiente entre diferentes plataformas. | Garantia de que todos os projetos entreguem uma experiência fluida e excepcional aos usuários. | Solução de problemas e otimização de processos para manter os projetos funcionando perfeitamente.",
-        "tags": "SQL, TypeScript, Next, Nest, React, TailwindCSS, PHP, Node, Redis",
+        "tags": "Languages: TypeScript, Python, PHP; Frontend: React, Next, TailwindCSS; Backend: Node, Nest, REST; Databases: MySQL, PostgreSQL, SQL Server, Redis; Cloud: AWS, Google Cloud, Cloudflare; AI & Tools: LLM, MCP, HubSpot",
         "href": "https://www.uniftc.edu.br"
       },
       "c2": {
@@ -45,7 +45,7 @@
         "end": "2024",
         "title": "Full Stack Developer · Freelancer",
         "description": "Desenvolvimento full-stack de aplicações web utilizando tecnologias modernas, como MongoDB, Express, React, Node e TypeScript. | Criação de APIs e interfaces com foco na melhoria da experiência do usuário. | Implementação de práticas de programação robustas, incluindo controle de versão com Git. | Participação ativa em todas as etapas do ciclo de desenvolvimento de aplicações, desde o planejamento até o lançamento.",
-        "tags": "MongoDB, Express, React, TailwindCSS, TypeScript",
+        "tags": "Languages: TypeScript, Python; Frontend: React, TailwindCSS; Backend: Express; Databases: MongoDB, MySQL, Redis; Tools: cPanel, Linux",
         "href": ""
       },
       "c3": {
@@ -53,7 +53,7 @@
         "end": "2022",
         "title": "Front-end Developer · Loja TrapStar",
         "description": "Desenvolvimento, manutenção e implantação de código em produção para sites de clientes, utilizando principalmente HTML, CSS e JavaScript. | Colaboração com a equipe de design para promover um ambiente de trabalho coeso e garantir experiências de usuário consistentes. | Realização de testes de qualidade para assegurar compatibilidade entre navegadores, velocidade e responsividade.",
-        "tags": "HTML, CSS, JavaScript",
+        "tags": "Languages: JavaScript, PHP, C#; Frontend: HTML, CSS, jQuery, Bootstrap; Tools: cPanel, Linux",
         "href": ""
       }
     }

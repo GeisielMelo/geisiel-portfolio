@@ -38,7 +38,7 @@
         "end": "Today",
         "title": "Full Stack Developer · UniFTC",
         "description": "Development of websites with a focus on accessibility and performance. | Creation of robust and functional APIs. | Integration of systems to ensure efficient communication between different platforms. | Ensuring that all projects deliver a seamless and exceptional experience to users. | Problem-solving and process optimization to keep projects running smoothly.",
-        "tags": "SQL, TypeScript, Next, Nest, React, TailwindCSS, PHP, Node, Redis",
+        "tags": "Languages: TypeScript, Python, PHP; Frontend: React, Next, TailwindCSS; Backend: Node, Nest, REST; Databases: MySQL, PostgreSQL, SQL Server, Redis; Cloud: AWS, Google Cloud, Cloudflare; AI & Tools: LLM, MCP, HubSpot",
         "href": "https://www.uniftc.edu.br"
       },
       "c2": {
@@ -46,7 +46,7 @@
         "end": "2024",
         "title": "Full Stack Developer · Freelancer",
         "description": "Full-stack development of web applications using modern technologies such as MongoDB, Express, React, Node, and TypeScript. | Development of APIs and interfaces with a focus on user experience enhancement. | Implementation of robust programming practices, including version control with Git. | Active participation in all stages of application development cycle, from planning to launch.",
-        "tags": "MongoDB, Express, React, TailwindCSS, TypeScript",
+        "tags": "Languages: TypeScript, Python; Frontend: React, TailwindCSS; Backend: Express; Databases: MongoDB, MySQL, Redis; Tools: cPanel, Linux",
         "href": ""
       },
       "c3": {
@@ -54,7 +54,7 @@
         "end": "2022",
         "title": "Front-end Developer · Loja TrapStar",
         "description": "Developed, maintained, and deployed production code for client websites, primarily utilizing HTML, CSS, and JavaScript. | Collaborated  with the design team to promote a cohesive team environment and ensure consistent user experiences. | Performed quality tests to ensure cross browser compatibility, speed and responsiveness.",
-        "tags": "HTML, CSS, JavaScript",
+        "tags": "Languages: JavaScript, PHP, C#; Frontend: HTML, CSS, jQuery, Bootstrap; Tools: cPanel, Linux",
         "href": ""
       }
     }
