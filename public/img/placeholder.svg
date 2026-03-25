@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#0f172a"/>
+  <!-- Grid -->
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <!-- Radial glow -->
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- Icon group centered -->
+  <g transform="translate(800, 420)">
+    <!-- Outer rounded rect (image frame) -->
+    <rect x="-52" y="-40" width="104" height="80" rx="10" fill="none" stroke="#334155" stroke-width="2.5"/>
+    <!-- Lens circle -->
+    <circle cx="0" cy="-2" r="22" fill="none" stroke="#334155" stroke-width="2.5"/>
+    <circle cx="0" cy="-2" r="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <!-- Notch on top -->
+    <rect x="-14" y="-50" width="28" height="12" rx="4" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <!-- Decorative dot top-right -->
+    <circle cx="36" cy="-28" r="4" fill="#334155"/>
+  </g>
+
+  <!-- Label -->
+  <text
+    x="800"
+    y="520"
+    text-anchor="middle"
+    font-family="ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace"
+    font-size="15"
+    letter-spacing="3"
+    fill="#475569"
+  >SCREENSHOT EM BREVE</text>
+
+  <!-- Subtle corner accents -->
+  <polyline points="20,20 20,50 50,50" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <polyline points="1580,20 1580,50 1550,50" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <polyline points="20,880 20,850 50,850" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <polyline points="1580,880 1580,850 1550,850" fill="none" stroke="#1e293b" stroke-width="2"/>
+</svg>

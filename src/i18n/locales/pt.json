@@ -53,7 +53,7 @@
         "end": "2022",
         "title": "Front-end Developer · Loja TrapStar",
         "description": "Desenvolvimento, manutenção e implantação de código em produção para sites de clientes, utilizando principalmente HTML, CSS e JavaScript. | Colaboração com a equipe de design para promover um ambiente de trabalho coeso e garantir experiências de usuário consistentes. | Realização de testes de qualidade para assegurar compatibilidade entre navegadores, velocidade e responsividade.",
-        "tags": "Languages: JavaScript, PHP, C#; Frontend: HTML, CSS, jQuery, Bootstrap; Tools: cPanel, Linux",
+        "tags": "Languages: JavaScript, PHP; Frontend: HTML, CSS, jQuery, Bootstrap; Tools: cPanel, Linux",
         "href": ""
       }
     }
@@ -63,36 +63,36 @@
     "title": "Projects",
     "cards": {
       "c1": {
-        "title": "Vacancies",
-        "description": "Vacancies foi um projeto desenvolvido como um método aprimorado para organizar suas candidaturas de forma mais eficiente.",
-        "image": "/img/vacancies.webp",
-        "git": "https://github.com/GeisielMelo/vacancies",
-        "live": "https://vacancies-client.vercel.app/",
-        "tags": "Express, Mongodb, Node, React, Tailwind CSS"
+        "title": "UNEX | MED",
+        "description": "Uma plataforma dedicada aos cursos de medicina da UNEX, com detalhes de cursos, fluxos de matrícula e informações institucionais com foco em performance e acessibilidade.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://unexmed.com.br",
+        "tags": "Next.js, TypeScript, Node, Tailwind CSS, Shadcn"
       },
       "c2": {
-        "title": "TMDb",
-        "description": "Um aplicativo criado no meu tempo livre com o objetivo de ser uma aplicação exclusivamente front-end alimentada por dados do TheMovieDB.",
-        "image": "/img/tmdb.webp",
-        "git": "https://github.com/GeisielMelo/TMDb",
-        "live": "https://tmdb.geisielmelo.vercel.app/",
-        "tags": "Firebase, Lucide, React, Swiper, Tailwind CSS"
+        "title": "Vestibular UniFTC",
+        "description": "O portal oficial do vestibular da UniFTC, com informações, fluxos de inscrição e resultados em uma interface clara e acessível para os candidatos.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://vestibular.uniftc.edu.br",
+        "tags": "TypeScript, React, Node, Tailwind CSS"
       },
       "c3": {
-        "title": "Profile Visualizer",
-        "description": "Uma forma mais eficaz de visualizar informações dos usuários por meio de gráficos e estatísticas.",
-        "image": "/img/profilevizualizer.webp",
-        "git": "https://github.com/GeisielMelo/Profile-visualizer",
-        "live": "https://profile-visualizer.vercel.app/",
-        "tags": "Node, React, Styled Components, Typescript"
+        "title": "MegaRevisão",
+        "description": "Uma plataforma de transmissão ao vivo de aulas de revisão para o ENEM, desenvolvida para a REDE UniFTC para ajudar estudantes a se prepararem para o exame nacional em tempo real.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://megarevisao.com.br",
+        "tags": "Next.js, TypeScript, Node, Tailwind CSS, Shadcn"
       },
       "c4": {
-        "title": "GNM-Chat",
-        "description": "Uma plataforma de chat completa onde você pode adicionar contatos e enviar mensagens em tempo real, muito simples de usar e totalmente responsiva.",
-        "image": "/img/gnmchat.webp",
-        "git": "https://github.com/GeisielMelo/GNM-Chat",
-        "live": "https://gnm-chat.vercel.app/",
-        "tags": "Firebase, Lucide, React, Tailwind CSS"
+        "title": "Transferência Externa Unex",
+        "description": "Uma aplicação web para candidatos à transferência externa da UNEX, guiando os usuários pelo processo de matrícula com um fluxo claro e intuitivo.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://unex.edu.br/transferencia",
+        "tags": "TypeScript, React, Node, Tailwind CSS"
       }
     }
   }

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useTranslations } from 'next-intl'
+import { ExternalLink } from 'lucide-react'
 import { FC } from 'react'
 
 export const Projects: FC = () => {
@@ -21,15 +22,25 @@ export const Projects: FC = () => {
                 <p className='mt-2 text-sm leading-normal'>{t(`cards.${key}.description`)}</p>
               </div>
 
-              <img
-                src={t(`cards.${key}.image`)}
-                loading='lazy'
-                alt={key}
-                title={t(`cards.${key}.title`)}
-                className='aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1'
-                width={1600}
-                height={900}
-              />
+              <a
+                href={t(`cards.${key}.live`)}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='group/img relative block sm:order-1 sm:col-span-2 sm:translate-y-1'
+              >
+                <img
+                  src={t(`cards.${key}.image`)}
+                  loading='lazy'
+                  alt={key}
+                  title={t(`cards.${key}.title`)}
+                  className='aspect-video w-full object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30'
+                  width={1600}
+                  height={900}
+                />
+                <div className='absolute top-2 right-2 opacity-0 transition-opacity group-hover/img:opacity-100'>
+                  <ExternalLink className='w-4 h-4 text-slate-200' />
+                </div>
+              </a>
             </div>
           </div>
         ))}

@@ -54,7 +54,7 @@
         "end": "2022",
         "title": "Front-end Developer · Loja TrapStar",
         "description": "Developed, maintained, and deployed production code for client websites, primarily utilizing HTML, CSS, and JavaScript. | Collaborated  with the design team to promote a cohesive team environment and ensure consistent user experiences. | Performed quality tests to ensure cross browser compatibility, speed and responsiveness.",
-        "tags": "Languages: JavaScript, PHP, C#; Frontend: HTML, CSS, jQuery, Bootstrap; Tools: cPanel, Linux",
+        "tags": "Languages: JavaScript, PHP; Frontend: HTML, CSS, jQuery, Bootstrap; Tools: cPanel, Linux",
         "href": ""
       }
     }
@@ -64,36 +64,36 @@
     "title": "Projects",
     "cards": {
       "c1": {
-        "title": "Vacancies",
-        "description": "Vacancies were created as an improved method for efficiently organizing your applications.",
-        "image": "/img/vacancies.webp",
-        "git": "https://github.com/GeisielMelo/vacancies",
-        "live": "https://vacancies-client.vercel.app/",
-        "tags": "Express, Mongodb, Node, React, Tailwind CSS"
+        "title": "UNEX | MED",
+        "description": "A dedicated platform for UNEX medical courses, featuring course details, enrollment flows, and institutional information with a focus on performance and accessibility.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://unexmed.com.br",
+        "tags": "Next.js, TypeScript, Node, Tailwind CSS, Shadcn"
       },
       "c2": {
-        "title": "TMDb",
-        "description": "An app created in my free time with the aim of being a front-end-only application powered by data from TheMovieDB.",
-        "image": "/img/tmdb.webp",
-        "git": "https://github.com/GeisielMelo/TMDb",
-        "live": "https://tmdb.geisielmelo.vercel.app/",
-        "tags": "Firebase, Lucide, React, Swiper, Tailwind CSS"
+        "title": "Vestibular UniFTC",
+        "description": "The official entrance exam portal for UniFTC, providing candidates with information, registration flows, and results in a clear and accessible interface.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://vestibular.uniftc.edu.br",
+        "tags": "TypeScript, React, Node, Tailwind CSS"
       },
       "c3": {
-        "title": "Profile Visualizer",
-        "description": "A more effective way to view user information through graphs and statistics.",
-        "image": "/img/profilevizualizer.webp",
-        "git": "https://github.com/GeisielMelo/Profile-visualizer",
-        "live": "https://profile-visualizer.vercel.app/",
-        "tags": "Node, React, Styled Components, Typescript"
+        "title": "MegaRevisão",
+        "description": "A live streaming platform for ENEM revision classes developed for REDE UniFTC, helping students prepare for Brazil's national high school exam in real time.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://megarevisao.com.br",
+        "tags": "Next.js, TypeScript, Node, Tailwind CSS, Shadcn"
       },
       "c4": {
-        "title": "GNM-Chat",
-        "description": "A complete chat platform where you can add contacts and send real-time messages, very simple to use and fully responsive.",
-        "image": "/img/gnmchat.webp",
-        "git": "https://github.com/GeisielMelo/GNM-Chat",
-        "live": "https://gnm-chat.vercel.app/",
-        "tags": "Firebase, Lucide, React, Tailwind CSS"
+        "title": "Transferência Externa Unex",
+        "description": "A streamlined web application for external transfer candidates at UNEX, guiding users through the enrollment process with a clear and intuitive flow.",
+        "image": "/img/placeholder.svg",
+        "git": "",
+        "live": "https://unex.edu.br/transferencia",
+        "tags": "TypeScript, React, Node, Tailwind CSS"
       }
     }
   }
