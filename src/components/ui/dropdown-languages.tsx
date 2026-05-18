@@ -1,6 +1,6 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import { Link } from '@/i18n/routing'
 import { GlobeIcon } from '@radix-ui/react-icons'
-import { LanguagesIcon } from 'lucide-react'
 import { FC } from 'react'
 
 export const DropdownLanguage: FC = () => {
@@ -13,13 +13,13 @@ export const DropdownLanguage: FC = () => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className='w-36' aria-label='languages'>
-        <a href='/en'>
+        <Link href='/' locale='en'>
           <DropdownMenuItem>English</DropdownMenuItem>
-        </a>
+        </Link>
 
-        <a href='/pt'>
+        <Link href='/' locale='pt'>
           <DropdownMenuItem>Português</DropdownMenuItem>
-        </a>
+        </Link>
       </DropdownMenuContent>
     </DropdownMenu>
   )

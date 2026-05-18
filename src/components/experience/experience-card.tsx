@@ -6,7 +6,6 @@ interface Card {
   title: string
   description: string
   tags: string
-  href?: string
 }
 
 interface TagGroup {
@@ -32,7 +31,7 @@ function parseTagGroups(tags: string): TagGroup[] | null {
   })
 }
 
-export const ExperienceCard: FC<Card> = ({ start, end, title, description, tags, href }) => {
+export const ExperienceCard: FC<Card> = ({ start, end, title, description, tags }) => {
   const tagsArray = tags.split(', ')
   const descriptionArray = description.split('|')
   const tagGroups = parseTagGroups(tags)
