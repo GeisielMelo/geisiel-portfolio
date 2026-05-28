@@ -1,4 +1,11 @@
 {
+  "Meta": {
+    "title": "Geisiel Melo | Desenvolvedor Full Stack",
+    "description": "Desenvolvedor Full Stack na REDE UniFTC. Atuo em plataformas web, APIs e integrações de sistemas, com foco em performance e acessibilidade.",
+    "siteName": "Geisiel Melo",
+    "ogImageAlt": "Geisiel Melo, portfólio de Desenvolvedor Full Stack"
+  },
+
   "Header": {
     "name": "Geisiel Melo",
     "dev": "Full Stack Developer",

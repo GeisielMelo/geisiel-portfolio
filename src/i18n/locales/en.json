@@ -1,4 +1,11 @@
 {
+  "Meta": {
+    "title": "Geisiel Melo | Full Stack Developer",
+    "description": "Full Stack Developer at REDE UniFTC. I work across web platforms, APIs and system integrations, with a focus on performance and accessibility.",
+    "siteName": "Geisiel Melo",
+    "ogImageAlt": "Geisiel Melo, Full Stack Developer portfolio"
+  },
+
   "Header": {
     "name": "Geisiel Melo",
     "dev": "Full Stack Developer",
