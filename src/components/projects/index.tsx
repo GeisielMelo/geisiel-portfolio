@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useTranslations } from 'next-intl'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink as ExternalLinkIcon } from 'lucide-react'
+import { ExternalLink } from '@/components/ui/external-link'
+import { UTM_CAMPAIGNS } from '@/lib/utm'
 import { FC } from 'react'
 
 export const Projects: FC = () => {
@@ -22,10 +24,10 @@ export const Projects: FC = () => {
                 <p className='mt-2 text-sm leading-normal'>{t(`cards.${key}.description`)}</p>
               </div>
 
-              <a
+              <ExternalLink
                 href={t(`cards.${key}.live`)}
-                target='_blank'
-                rel='noopener noreferrer'
+                campaign={UTM_CAMPAIGNS.Projects}
+                content={key}
                 className='group/img relative block sm:order-1 sm:col-span-2 sm:translate-y-1'
               >
                 <img
@@ -38,9 +40,9 @@ export const Projects: FC = () => {
                   height={900}
                 />
                 <div className='absolute top-2 right-2 opacity-0 transition-opacity group-hover/img:opacity-100'>
-                  <ExternalLink className='w-4 h-4 text-slate-200' />
+                  <ExternalLinkIcon className='w-4 h-4 text-slate-200' />
                 </div>
-              </a>
+              </ExternalLink>
             </div>
           </div>
         ))}

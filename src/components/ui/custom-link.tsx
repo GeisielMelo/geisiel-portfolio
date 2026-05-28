@@ -2,6 +2,8 @@
 
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { sendGTMEvent } from '@next/third-parties/google'
+import { ExternalLink } from '@/components/ui/external-link'
+import { UTM_CAMPAIGNS } from '@/lib/utm'
 import { FC } from 'react'
 
 const getProjectHref = (repository: Repository): string | null => {
@@ -21,10 +23,11 @@ export const CustomLink: FC<{ repository: Repository }> = ({ repository }) => {
   if (!href) return null
 
   const event = { event: 'archive_click', action: 'click', type: 'link', title: repository.name, category: 'archive', href }
+  const slug = repository.name.toLowerCase().replace(/\s+/g, '-')
 
   return (
-    <a href={href} target='_blank' rel='noopener noreferrer' title={title} onClick={() => sendGTMEvent(event)}>
+    <ExternalLink href={href} campaign={UTM_CAMPAIGNS.Archive} content={slug} title={title} onClick={() => sendGTMEvent(event)}>
       {title === 'Live' ? <ExternalLinkIcon height={16} width={16} /> : <GitHubLogoIcon height={16} width={16} />}
-    </a>
+    </ExternalLink>
   )
 }
